@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./style.css">
+  <title>Calculadora de média do Ghuyer</title>
+</head>
+
+<body>
+<script src="./script.js">
+</script>
+
+<div class="page">
+<header>
+  <h1>Calculadora de média da Universidade Ghuyer</h1>
+  <h2>Descubra se você passou de ano...</h2>
+</header>
+<main>
+
+  <div class="info">
+<div class="studentArea">
+<div class="studentInfo">
+<label for="studentName">Nome</label>
+<input type="text" id="studentName" placeholder="digite seu nome">
+</div>
+<div class="studentInfo">
+<label for="studentCourse">Curso</label>
+<select name="" id="studentCourse">
+  <option value=""> selecione seu curso </option>
+  <option value="curso">Análises semióticas</option>
+  <option value="curso">Flashback e Flashforward</option>
+  <option value="curso">Narrativas não-lineares</option>
+</select>
+
+
+</div>
+<div class="studentInfo">
+<label for="studentYear">Ano</label>
+<input type="text" id="studentYear" placeholder="digite seu ano">
+</div>
+</div>
+
+<div class="result">
+  <p id="finalMessage">Parabéns! <br>
+  Você passou com ______</p>
+</div>
+</div>
+<div class="grades">
+
+<div class="grade">
+<label for="firstGrade">Primeira prova parcial <span>(nota de 0 a 5)</span></label>
+<input type="text" id="firstGrade" placeholder="use ponto em vez de vírgula para decimais">
+</div>
+
+<div class="grade">
+<label for="secondGrade">Segunda prova parcial <span>(nota de 0 a 5)</span></label>
+<input type="text" id="secondGrade" placeholder="use ponto em vez de vírgula para decimais">
+</div>
+
+<div class="grade">
+<label for="thirdGrade">Prova final <span>(nota de 0 a 10)</span></label>
+<input type="text" id="thirdGrade" placeholder="use ponto em vez de vírgula para decimais">
+</div>
+
+<div class="grade">
+<label for="fourthGrade">Artigo acadêmico <span>(nota de 0 a 10)</span></label>
+<input type="text" id="fourthGrade" placeholder="use ponto em vez de vírgula para decimais">
+</div>
+
+</div>
+
+<button type="submit" onclick="doingTheMath()">Calcular</button>
+
+</main>
+</div>
+
+
+</body>
+</html>

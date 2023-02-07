@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  --font-size: 1.6rem;
+  --font-family-head: 'Oswald';
+  --font-family-text: 'Open Sans';
+}
+
+.page {
+  font-family: var(--font-family-text);
+  margin: 0 auto;
+  max-width: 100rem;
+  text-align: center;
+}
+
+header {
+  font-family: var(--font-family-head);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+input, select {
+  padding: 0 1rem;
+}
+
+.studentArea {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+  padding: 3rem  0;
+  padding-bottom: 5rem;
+}
+
+.studentArea input, select {
+  border-radius: 8px;
+  height: 3rem;
+  margin-top: 0.5rem;
+}
+
+.studentArea :nth-child(1) input {
+  width: 40rem;
+}
+
+.studentArea :nth-child(2) input {
+  width: 40rem;
+}
+
+.studentArea :nth-child(3) input {
+  width: 10rem;
+}
+
+.studentInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.result {
+  padding: 1rem;
+  border: 3px black dashed;
+  border-radius: 5px;
+  font-family: var(--font-family-head);
+  font-size: 2rem;
+
+  animation: gradeBox 2s infinite linear;
+  }
+
+.result p {
+  opacity: 0;
+  transition: 2s;
+} 
+
+.grades {
+  max-width: 90rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.grades input {
+  width: 100%;
+  border-radius: 8px;
+  height: 3rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+label span {
+
+  font-size: 1.2rem;
+}
+
+button {
+  padding: 1rem;
+  border-radius: 8px;
+  width: 15rem;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+@keyframes gradeBox {
+  0% {
+    border-color: black;
+  }
+
+  50% {
+    border-color: white;
+  }
+
+  100% {
+    border-color: black;
+  }
+  
+}
